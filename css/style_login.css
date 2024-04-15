@@ -1,0 +1,437 @@
+*{
+   
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center; */
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 97.5vw;
+    height: 100vw;
+    padding: 0;   
+    
+}
+/* ---------------------------- */
+/* Animations */
+@keyframes fadeIn{
+    0% {
+        opacity: 0; 
+        transform: translateY(-20px);
+    }
+    60% {
+        opacity: 0.8; 
+        transform: translateY(10px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+/* ----------------------------- */
+
+#carlos{
+    /* width: 98vw;
+    height: 44vw;
+    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+    background-image: url('../images/web/main-page-image-1.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    border: 5px solid rgb(156, 155, 155);
+    border-radius: 2vw;
+    position: relative; */
+    border: 1px solid ;
+    width: 100%;
+    height: 100%;
+    margin: 0vw;
+    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-image: url('../images/web/main-page-image-1.jpg');
+    background-attachment: fixed;
+    background-size:cover;
+    background-size:cover;
+    border-radius: 1vw;
+}
+#carlos > div:first-child{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 100%;/*Set the with 100% to then the register image container put it in the left */
+    height: 10%;
+}
+#goHome{
+    /* border: 1px solid green; */
+    width: 15vw;
+    height: 6vh;
+    margin-left: 3vw;
+    text-align: center;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+.register{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* text-align: center; */
+    /* align-items: center; */
+    display: grid;
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    width: 5vw;
+    height: 5vw;
+    margin-left: auto;
+    border-radius: 50%;
+}
+.register img{
+    width: 40%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* ----------------------------------------- */
+/* Login page */
+#loginSection {
+    /* the size depends on the section measures */
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+#loginSection h1{
+    /* border: 1px solid red; */
+    height: 6vh;
+    width: 30vw;
+    margin: auto;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+#loginSection form{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 20vw;   
+    margin: auto;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+#email,#password{
+    width: 10vw;
+    margin: auto;
+    margin-top: 1vh;
+    font-size:x-small;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+#submitLogin{
+    margin-top: 1vh;
+    width: 7vw;
+    background-color: black;
+    box-shadow: 2px 2px 5px 5px rgba(36, 35, 35, 0.8);
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    margin: 10px auto;
+}
+#submitLogin:hover{
+    background-color: gray;
+}
+/* ----------------------------------------------- */
+
+
+
+
+/* Registration page */
+#loginSection_registration {
+    /* the size depends on the section measures */
+    width: 100%;
+    height: 40%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+
+#loginSection_registration h1 {
+    height: 6vh;
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+#loginSection_registration form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-gap: 10px; 
+    width: 80%; 
+    padding: 1.5vh;
+    margin: 0 auto; 
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+#loginSection_registration p {
+    height: 5vh;
+    width: 30vw;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+#user-type,#emailRegistration,#emailRegistrationConfirmation,#passwordRegistration, #passwordRegistrationConfirmation,#gender,#Fname,#Lname,#country,#phone,#selectionRegistration{
+    width: 10vw;
+    margin: auto;
+    margin-top: 1vh;
+    font-size:x-small;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+#formMessage{
+    display: flex;
+    width: 30vw;
+    align-items: center;
+
+}
+#formMessageLogin{
+   text-align: center;
+   margin: 0 0.5vw 2.5vw 0.5vw;
+   
+   height: 2vw;
+    border: 1px solid black;
+}
+#submitRegistration{
+    margin-top: 1vh;
+    width: 7vw;
+    background-color: black;
+    box-shadow: 2px 2px 5px 5px rgba(36, 35, 35, 0.8);
+    color: white;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    margin: 10px auto;
+}
+#submitRegistration:hover{
+    background-color: gray;
+}
+
+/* ------------------------------------------ */
+
+/* Add a space */
+
+#addNewProperty {
+    /* the size depends on the section measures */
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+#addNewProperty h1{
+    /* border: 1px solid red; */
+    height: 6vh;
+    width: 30vw;
+    margin: auto;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+#addNewProperty form{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 30vw;
+    height: auto;
+    padding: 1vw;   
+    margin: auto;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+/* shared for addSpace and SpaceDetails */
+#pName,#rentalPrice,#capacity,#neighborhood,#address,#sqFeet,#parking,#publicTransportation,#smoke{
+    width: 15vw;
+    margin: auto;
+    margin-top: 1vh;
+    font-size:x-small;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.1);
+}#buttonSubmitAddPP,#updateProperty{
+    width: 15vw;
+    margin: auto;
+    margin-top: 1vh;
+    font-size:small;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.1);
+}
+
+
+/* ------------------------------------------ */
+
+/* Space Details */
+
+#propertyDetails {
+    /* the size depends on the section measures */
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+#propertyDetails h1{
+    /* border: 1px solid red; */
+    height: 6vh;
+    width: 30vw;
+    margin: auto;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+#propertyInfo {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 30vw;
+    height: auto;
+    padding: 1vw;   
+    margin: auto;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+
+#propertyInfo {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 30vw;
+    height: auto;
+    padding: 1vw;   
+    margin: auto;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+
+/* ------------------------------------------ */
+
+/* Owner page */
+
+
+
+
+#ownerProperties {
+    /* the size depends on the section measures */
+        width: 100%;
+    height: 50%;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    position: relative;
+}
+#addSpace{
+    /* position: absolute;  */
+    top: 10px;
+    left: 50%; 
+    display: grid;
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 5vw;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+#buttonAddSpace{
+    width: 15vw;
+    margin: auto;
+    margin-top: 1vh;
+    font-size:small;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.1);
+    margin-bottom:2px ;
+}
+
+#propertyDetails{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.property{
+    /* border: 1px solid rgb(47, 149, 147); */
+    display: grid;
+    grid-template-columns: 1fr ;
+    width: 30vw;
+    height: auto;
+    padding: 1vw;   
+    margin: auto;
+    margin-bottom: 3vw;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.8);
+    box-shadow: 10px 10px 5px 12px rgba(36, 35, 35, 0.8);
+    border-radius: 2vw;
+}
+#im1,#im2,#im3{
+    width: 20vw;
+}
+
+
+
+
+
+
+
+
+

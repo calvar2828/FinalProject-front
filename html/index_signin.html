@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet login and sign up" href="../css/style_login.css">
+    <script src="../library/jquery.min.js"></script>
+</head>
+<body>
+    <section id="carlos">
+        <div>
+            <h1 id="goHome" onclick="goHome()">Los Gansos</h1>
+            <label class="register">
+                <img src="../images/logos/birth-logo.png" alt="Logo-image">
+            </label>      
+        </div>
+        <div id="loginSection_registration" class="fade-in">
+            <h1>Create your account</h1>
+            <form action="http://localhost:9999/signIn" method="POST" id="registrationForm">
+                <label for="gender"> Gender: </label>
+                <input id="gender" list="gender-list" name="gender">
+                    <datalist id="gender-list">
+                        <option value="Male"></option>
+                        <option value="Female"></option>
+                        <option value="Undefined"></option>
+                    </datalist>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="emailRegistration" name="email">
+                <label for="Fname">First Name</label>
+                <input type="text" id="Fname" name="firstName">
+                <label for="email">Confirm email:</label>
+                <input type="email" id="emailRegistrationConfirmation">
+                <label for="Lname">Last Name</label>
+                <input type="text" id="Lname" name="lastName">
+                <label for="password">Enter the password</label>
+                <input type="password" id="passwordRegistration" name="password">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country">
+                <label for="password">Confirm password</label>
+                <input type="password" id="passwordRegistrationConfirmation">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+                <label for="user-type"> User Type: </label>
+                <input id="user-type" list="user-type-list" name="role">
+                    <datalist id="user-type-list">
+                        <option value="Cooworker"></option>
+                        <option value="Owner"></option>
+                    </datalist>
+                
+
+                <input type="submit" id="submitRegistration" value="Sign In">
+                <label id="formMessage"></label>
+            </form>
+            <p>After registration login in the main page</p>
+        </div>
+
+    </section>
+
+    <script src="../js/signIn.js"></script>
+    <script></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add space</title>
+    <link rel="stylesheet" href="../css/style_login.css">
+    <script src="../library/jquery.min.js"></script>
+</head>
+<body>
+    <section id="carlos">
+        <div>
+            <h1 id="goHome" onclick="goHome()">Los Gansos</h1>
+            <label class="register">
+                <img src="../images/logos/birth-logo.png" alt="Logo-image">
+            </label>      
+        </div>
+        <div id="addNewProperty" class="fade-in">
+            <h1>Set your property</h1>
+            <form id="formAddNewProperty" onsubmit="addProperty(event)">
+                <label for="pName">Property Name</label>
+                <input id="pName" type="text" name="name" required>
+                <label for="rentalPrice">Rental Price</label>
+                <input id="rentalPrice" type="text" pattern="\d+(\.\d{1,2})?" name="price" required>
+                <label for="capacity">Capacity</label>
+                <input id="capacity" type="text" pattern="\d+" name="capacity" required>
+                <label for="neighborhood">Neighborhood</label>
+                <input id="neighborhood" type="text" name="neighborhood" required>
+                <label for="address">Address</label>
+                <input id="address" type="text" name="address" required>
+                <label for="sqFeet">Sq Feet</label>
+                <input id="sqFeet" type="text" pattern="\d+" name="area" required>
+                <label for="parking">Parking</label>
+                <select id="parking">
+                    <option></option>
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+                <label for="publicTransportation">Public Transportation</label>
+                <select id="publicTransportation">
+                    <option></option>
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+                <label for="smoke">Somke availability</label>
+                <select id="smoke">
+                    <option></option>
+                    <option>No</option>
+                    <option>Yes</option>
+                </select>
+                <label for="images">Upload Images </label>
+                <input type="file" id="images" name="images">
+                <button type="submit" id="buttonSubmitAddPP">Add Property</button>
+               
+            </form>
+            
+        </div>
+
+    
+
+    <script src="../js/addProperty.js"></script>
+</body>
+</html>
